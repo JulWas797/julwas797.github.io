@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>📚 UBUNCHU - VOL3</title>
+    <meta charset="utf-8">
+
+<body>
+<h1 style="align-content: center">📚 UBUNCHU - VOL3</h1>
+<div class="w3-bar w3-border w3-light-grey">
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-red">Głowna</a>
+  <a href="reader.html" class="w3-bar-item w3-button w3-hover-green">Reader</a>
+  <a href="pageinfo.html" class="w3-bar-item w3-button w3-hover-blue">O stronie</a>
+</div>
+
+<hr>
+<div class="slideshow-container  w3-center" >
+<a class="prev" name="top" onclick="plusSlides(-1)"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+<div class="mySlides fade">
+  <img src="ubunchu3/000.tif" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="ubunchu3/001.tif" style="width:75%">
+</div>
+
+<div class="mySlides fade">
+  <img src="ubunchu3/002.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/003.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/004.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/005.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/006.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/007.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/008.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/009.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/010.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/011.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/012.tif" style="width:75%">
+</div>
+    <div class="mySlides fade">
+  <img src="ubunchu3/013.tif" style="width:75%">
+</div>
+    
+
+<a class="prev" onclick="plusSlides(-1)" href="ubunchu3.html#top">&#10094;</a>
+<a class="next" onclick="plusSlides(1)" href="ubunchu3.html#top">&#10095;</a>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+</body>
+</html>
