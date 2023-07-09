@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	<style>
+        .gradient {
+            /*width: 100%;*/
+            /*height: 100%;*/
+            background: linear-gradient(50deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+            background-size: 600% 100%;
+            animation: gradient 16s linear infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0
+            }
+            100% {
+                background-position: 100%
+            }
+        }
+
+        img.emoji {
+            height: .9em;
+            width: .9em;
+            margin: 0 0 0 0;
+            vertical-align: -0.1em;
+        }
+
+		p {
+			margin-bottom: 0.3em;
+		}
+
+		h1 {
+			margin-bottom: 0.5rem;
+		}
+	</style>
+</head>
+<body class="bg-dark" data-bs-theme="dark">
+	<header class="sticky-top">
+		<nav class="navbar gradient p-2 navbar-expand-md">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="fs-1 collapse collapse navbar-collapse" id="navigation">
+					<ul class="navbar-nav me-auto mb-5 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="flex-shrink-0 fw-light">
+		<section class="p-5">
+			<div class="container">
+				<h1 class="display-1 fw-semibold">Hello 👋<i class="em em-wave"></i></h1>
+				<p class="fs-3">My name is <b>Julian</b> and I am a High-School student from Poland</p>
+			</div>
+		</section>
+		<section class="bg-dark-subtle p-5" id="about">
+			<div class="container">
+				<h1 class="display-4 fw-semibold">About Myself</h1>
+				<div class="fs-4">
+					<p>
+						My journey of coding started when I was very young.
+						What I did first was writing some basic Windows command-line scripts on old family PC.
+					</p>
+					<p>
+						After this it went on, first with Scratch and then tried the block-language for mobile - AppInventor.
+						In a meantime I tried some development with <b>Visual Basic .NET</b>.
+						It didn't work out very well, so I quickly dumped it, but this experience allowed me to learn some roots of recursion and algorithms.
+					</p>
+					<p>
+						After some time I stopped programming due to change of my PC, although I didn't stop IT.
+						Instead of focusing on making apps, I dived into the world of Microsoft Windows.
+						I made custom modified builds, and ventured throughout the iceberg of beta versions.
+						If you search good enough you can find my posts I made on the largest forums dedicated to them.
+					</p>
+					<p>
+						a
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+</body>
+<script>
+    twemoji.parse(document.body)
+</script>
+</html>
