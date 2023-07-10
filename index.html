@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Julian's Website</title>
+	<link rel="icon" type="image/x-icon" href="res/favicon.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
 		  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
 			crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/fontawesome@5.6.3/index.min.js"></script>
 	<style>
         .gradient {
-            /*width: 100%;*/
-            /*height: 100%;*/
             background: linear-gradient(50deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
             background-size: 600% 100%;
             animation: gradient 16s linear infinite;
@@ -32,27 +32,39 @@
             height: .9em;
             width: .9em;
             margin: 0 0 0 0;
-            vertical-align: -0.1em;
+            vertical-align: -.1em;
         }
 
-		p {
-			margin-bottom: 0.3em;
+        p {
+            margin-bottom: .3em;
+        }
+
+        h1 {
+            margin-bottom: .5rem;
+        }
+
+		h2 {
+			font-size: calc(1.325rem + .9vw);
 		}
 
-		h1 {
-			margin-bottom: 0.5rem;
-		}
+        a.anchor {
+            display: block;
+            position: relative;
+            top: -90px;
+            visibility: hidden;
+        }
 	</style>
 </head>
 <body class="bg-dark" data-bs-theme="dark">
 	<header class="sticky-top">
 		<nav class="navbar gradient p-2 navbar-expand-md">
 			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-expanded="false">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+						aria-expanded="false">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="fs-1 collapse collapse navbar-collapse" id="navigation">
-					<ul class="navbar-nav me-auto mb-5 mb-lg-0">
+					<ul class="navbar-nav me-auto mb-0">
 						<li class="nav-item">
 							<a class="nav-link" href="#">Home</a>
 						</li>
@@ -60,7 +72,7 @@
 							<a class="nav-link" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Skills</a>
+							<a class="nav-link" href="#skills">Skills</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Projects</a>
@@ -81,33 +93,111 @@
 				<p class="fs-3">My name is <b>Julian</b> and I am a High-School student from Poland</p>
 			</div>
 		</section>
-		<section class="bg-dark-subtle p-5" id="about">
+		<a class="anchor" id="about"></a>
+		<section class="bg-dark-subtle p-5">
 			<div class="container">
 				<h1 class="display-4 fw-semibold">About Myself</h1>
-				<div class="fs-4">
+				<div class="fs-5">
 					<p>
-						My journey of coding started when I was very young.
-						What I did first was writing some basic Windows command-line scripts on old family PC.
+						My journey in coding began at a young age with basic command-line scripts, Scratch and
+						AppInventor.
+						Later on I put my focus to <b>Visual Basic .NET</b>. It allowed me to learn key programming
+						concepts
 					</p>
 					<p>
-						After this it went on, first with Scratch and then tried the block-language for mobile - AppInventor.
-						In a meantime I tried some development with <b>Visual Basic .NET</b>.
-						It didn't work out very well, so I quickly dumped it, but this experience allowed me to learn some roots of recursion and algorithms.
+						Soon, I took a break from programming to explore the world of Microsoft Windows betas and
+						internals.
+						My focus shifted to graphic design with Adobe Photoshop and UI/UX prototyping with Sketch/Figma.
 					</p>
 					<p>
-						After some time I stopped programming due to change of my PC, although I didn't stop IT.
-						Instead of focusing on making apps, I dived into the world of Microsoft Windows.
-						I made custom modified builds, and ventured throughout the iceberg of beta versions.
-						If you search good enough you can find my posts I made on the largest forums dedicated to them.
+						The thing that got me into returning was purchasing an old Samsung smartwatch.
+						I created basic apps and watch faces, two of which are still available on Galaxy Apps with over
+						3000 total downloads.
 					</p>
 					<p>
-						a
+						I then focused on <b>VB.net</b>, <b>C#</b>, and after another break, went full-on <b>Java</b>.
+						What I've also done was taking coding classes (learning <b>Python</b> for Machine Learning in
+						the process), and reading different books that taught me things such as <b>C Language</b>.
+					</p>
+					<p>
+						Currently, I continue to learn and strive to improve.
+						I view code as an art form and aim to provide the best user experience possible.
+						In my free time, I enjoy listening to music, DJing, music production, graphics editing, watching
+						anime, and reading books.
+					</p>
+					<p>
+
+						My goals include further improving my abilities and enhancing my knowledge by focusing on
+						portfolio projects and learning industry tools such as Kubernetes.
 					</p>
 				</div>
 			</div>
 		</section>
+		<a class="anchor" id="skills"></a>
+		<section class="bg-dark bg-secondary p-5">
+			<div class="container">
+				<h1 class="display-4 fw-semibold">My Skills</h1>
+				<div class="fs-5">
+					<section>
+						<h2 class="display-6 fw-lighter"><i class="fa-brands fa-java"></i> Java</h2>
+						<p>
+							I have solid understanding of Java and its Standard library. I also understand some of the
+							JVM internals, like off-stack allocation.
+						</p>
+						<p>
+							Additionally I understand how to preform Java Unit Testing with <b>JUnit5</b> and
+							<b>Mockito</b>, how to apply java to web development with <b>Spring Boot + Thymeleaf</b> and
+							<b>Jakarta EE</b>, and how to use Java servers such as <b>Tomcat</b> and <b>Glassfish</b>.
+						</p>
+						<p>
+							My knowledge covers main build tools (<b>Maven</b>, <b>Gradlew</b>, <b>Ant</b>), and <b>Oracle
+							H2 InMem Databases</b>.
+						</p>
+					</section>
+					<section>
+						<h2 class="fw-lighter"><i class="fa-brands fa-windows"></i> Visual Basic .NET</h2>
+						<p>
+							This is the first "real" programming language that I learned. My understanding of it
+							contains some deep topics, such as .NET Security, I/O and usage of Windows Registry.
+						</p>
+					</section>
+					<section>
+						<h2 class="fw-lighter"><i class="fa-brands fa-python"></i> Python</h2>
+						<p>
+							I understand Python basics, and key stuff for ML. This covers the libraries such as
+							<b>NumPy</b>, <b>SkLearn</b>, <b>Pandas</b> and <b>Matplotlib</b>. I can also use <b>Jupyter
+							Notebooks</b>.
+						</p>
+					</section>
+					<section>
+						<h2 class="fw-lighter"><i class="fa-solid fa-c"></i> CLang</h2>
+						<p>
+							I understand the C Language, especially when it comes different standards. I also have some
+							knowledge of C Standard Libraries, and currently I am trying to learn OpenGL and Win32API.
+						</p>
+					</section>
+					<section>
+						<h2 class="fw-lighter"><i class="fa-brands fa-html5"></i> HTML5</h2>
+						<p>
+							I know how to use HTML5 to make websites (like this), and how to use with <b>CSS3</b>, <b>JQuery</b>,
+							and known stylesheets such as <b>Bootstrap 5</b>.
+						</p>
+					</section>
+					<section>
+						<h3 class="fw-lighter"><i class="fa-solid fa-terminal"></i> Others languages and tools</h3>
+						<section class="fs-6">
+							<p>
+								I understand <b>C#</b>, <b>C++</b> (to the point of Class Operator Overloading), <b>Apache Groovy</b>, and some of <b>Scala</b> + <b>Kotlin</b>.
+							</p>
+							<p>
+								My plans include Raspberry Pi development, so I also learned parts of <b>ARM Assembly</b>.
+							</p>
+						</section>
+					</section>
+				</div>
+			</div>
+		</section>
 	</main>
-
 </body>
 <script>
     twemoji.parse(document.body)
