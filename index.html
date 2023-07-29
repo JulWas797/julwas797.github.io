@@ -11,6 +11,7 @@
 			crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/fontawesome@5.6.3/index.min.js"></script>
+
 	<style>
         .gradient {
             background: linear-gradient(50deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
@@ -25,6 +26,22 @@
             }
             100% {
                 background-position: 100%
+            }
+        }
+
+        .anim-2 {
+            animation: text-shadow 3s infinite;
+        }
+
+        @keyframes text-shadow {
+            0% {
+                text-shadow: 0 0 2px #FFFFFF00;
+            }
+            50% {
+                text-shadow: 0 0 2px #FFFFFF88;
+            }
+            100% {
+                text-shadow: 0 0 2px #FFFFFF00;
             }
         }
 
@@ -43,9 +60,9 @@
             margin-bottom: .5rem;
         }
 
-		h2 {
-			font-size: calc(1.325rem + .9vw);
-		}
+        h2 {
+            font-size: calc(1.325rem + .9vw);
+        }
 
         a.anchor {
             display: block;
@@ -87,21 +104,37 @@
 	</header>
 
 	<main class="flex-shrink-0 fw-light">
-		<section class="p-5">
+		<section class="p-5 ">
 			<div class="container">
 				<h1 class="display-1 fw-semibold">Hello 👋<i class="em em-wave"></i></h1>
 				<p class="fs-3">My name is <b>Julian</b> and I am a High-School student from Poland</p>
+
+				<br>
+			</div>
+		</section>
+		<section class="p-5 bg-body-tertiary">
+			<div class="container">
+				<figure>
+					<blockquote class="blockquote">
+						<p class="fs-2">Am I suggesting 100% test coverage? No, I’m not suggesting it. <b>I’m demanding
+							it. </b></p>
+					</blockquote>
+					<figcaption class="blockquote-footer fs-4">
+						Robert C. Martin, <cite>The Clean Coder</cite>
+					</figcaption>
+				</figure>
 			</div>
 		</section>
 		<a class="anchor" id="about"></a>
-		<section class="bg-dark-subtle p-5">
+		<section class="bg-dark bg-secondary p-5">
 			<div class="container">
 				<h1 class="display-4 fw-semibold">About Myself</h1>
 				<div class="fs-5">
 					<p>
 						My journey in coding began at a young age with basic command-line scripts, Scratch and
 						AppInventor.
-						Later on I put my focus to <b>Visual Basic .NET</b>. It allowed me to learn key programming
+						Later on I put my focus to <b class="anim-2">Visual Basic .NET</b>. It allowed me to learn key
+						programming
 						concepts
 					</p>
 					<p>
@@ -115,9 +148,12 @@
 						3000 total downloads.
 					</p>
 					<p>
-						I then focused on <b>VB.net</b>, <b>C#</b>, and after another break, went full-on <b>Java</b>.
-						What I've also done was taking coding classes (learning <b>Python</b> for Machine Learning in
-						the process), and reading different books that taught me things such as <b>C Language</b>.
+						I then focused on <b class="anim-2">VB.net</b>, <b class="anim-2">C#</b>, and after another
+						break, went full-on <b class="anim-2">Java</b>.
+						What I've also done was taking coding classes (learning <b class="anim-2">Python</b> for Machine
+						Learning in
+						the process), and reading different books that taught me things such as <b class="anim-2">C
+						Language</b>.
 					</p>
 					<p>
 						Currently, I continue to learn and strive to improve.
@@ -134,7 +170,7 @@
 			</div>
 		</section>
 		<a class="anchor" id="skills"></a>
-		<section class="bg-dark bg-secondary p-5">
+		<section class="bg-dark-subtle p-5">
 			<div class="container">
 				<h1 class="display-4 fw-semibold">My Skills</h1>
 				<div class="fs-5">
@@ -145,12 +181,16 @@
 							JVM internals, like off-stack allocation.
 						</p>
 						<p>
-							Additionally I understand how to preform Java Unit Testing with <b>JUnit5</b> and
-							<b>Mockito</b>, how to apply java to web development with <b>Spring Boot + Thymeleaf</b> and
-							<b>Jakarta EE</b>, and how to use Java servers such as <b>Tomcat</b> and <b>Glassfish</b>.
+							Additionally I understand how to preform Java Unit Testing with <b class="anim-2">JUnit5</b>
+							and
+							<b class="anim-2">Mockito</b>, how to apply java to web development with <b class="anim-2">Spring
+							Boot + Thymeleaf</b> and
+							<b class="anim-2">Jakarta EE</b>, and how to use Java servers such as <b class="anim-2">Tomcat</b>
+							and <b class="anim-2">Glassfish</b>.
 						</p>
 						<p>
-							My knowledge covers main build tools (<b>Maven</b>, <b>Gradlew</b>, <b>Ant</b>), and <b>Oracle
+							My knowledge covers main build tools (<b class="anim-2">Maven</b>, <b
+								class="anim-2">Gradlew</b>, <b class="anim-2">Ant</b>), and <b class="anim-2">Oracle
 							H2 InMem Databases</b>.
 						</p>
 					</section>
@@ -165,7 +205,8 @@
 						<h2 class="fw-lighter"><i class="fa-brands fa-python"></i> Python</h2>
 						<p>
 							I understand Python basics, and key stuff for ML. This covers the libraries such as
-							<b>NumPy</b>, <b>SkLearn</b>, <b>Pandas</b> and <b>Matplotlib</b>. I can also use <b>Jupyter
+							<b class="anim-2">NumPy</b>, <b class="anim-2">SkLearn</b>, <b class="anim-2">Pandas</b> and
+							<b class="anim-2">Matplotlib</b>. I can also use <b class="anim-2">Jupyter
 							Notebooks</b>.
 						</p>
 					</section>
@@ -179,18 +220,22 @@
 					<section>
 						<h2 class="fw-lighter"><i class="fa-brands fa-html5"></i> HTML5</h2>
 						<p>
-							I know how to use HTML5 to make websites (like this), and how to use with <b>CSS3</b>, <b>JQuery</b>,
-							and known stylesheets such as <b>Bootstrap 5</b>.
+							I know how to use HTML5 to make websites (like this), and how to use with <b class="anim-2">CSS3</b>,
+							<b class="anim-2">JQuery</b>,
+							and known stylesheets such as <b class="anim-2">Bootstrap 5</b>.
 						</p>
 					</section>
 					<section>
 						<h3 class="fw-lighter"><i class="fa-solid fa-terminal"></i> Others languages and tools</h3>
 						<section class="fs-6">
 							<p>
-								I understand <b>C#</b>, <b>C++</b> (to the point of Class Operator Overloading), <b>Apache Groovy</b> (<b>Spock Framework</b>), and some of <b>Scala</b> + <b>Kotlin</b>.
+								I understand <b class="anim-2">C#</b>, <b class="anim-2">C++</b> (to the point of Class
+								Operator Overloading), <b class="anim-2">Apache Groovy</b>, and some of <b>Scala</b> +
+								<b>Kotlin</b>.
 							</p>
 							<p>
-								My plans include Raspberry Pi development, so I also learned parts of <b>ARM Assembly</b>.
+								My plans include Raspberry Pi development, so I also learned parts of <b class="anim-2">ARM
+								Assembly</b>.
 							</p>
 						</section>
 					</section>
